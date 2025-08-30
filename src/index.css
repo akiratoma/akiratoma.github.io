@@ -1,0 +1,91 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+}
+
+div .flex-centered {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+div .flex-table {
+  align-items: safe center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+}
+
+div .flex-table > div {
+  margin-bottom: 3em;
+  padding: 1em;
+}
+
+h1 {
+  color: #434343;
+  font-size: 2em;
+  font-weight: 600;
+  text-align: start;
+  white-space: nowrap;
+}
+
+h2 {
+  color: #434343;
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-top: 0;
+  text-align: start;
+  white-space: nowrap;
+}
+
+a {
+  color: #3489ca;
+  font-size: 1em;
+  text-decoration: inherit;
+}
+
+table,
+th,
+td {
+  border: 1px solid #9e9e9e;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  color: #434343;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 0.5em;
+  text-align: start;
+  white-space: nowrap;
+}
+
+td {
+  color: #434343;
+  font-size: 1em;
+  padding: 0.5em;
+  white-space: nowrap;
+}
+
+.logo-container {
+  height: 50px;
+  width: 50px;
+}
+
+.error-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

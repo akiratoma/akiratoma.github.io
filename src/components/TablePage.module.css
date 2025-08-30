@@ -1,0 +1,34 @@
+.row {
+  overflow: hidden;
+}
+
+.hidden {
+  max-height: 0px;
+  transition: max-height 0.5s ease-out;
+}
+
+.opened {
+  max-height: 100vh;
+  transition: max-height 0.5s ease-in;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.collapse {
+  visibility: collapse;
+  transition: visibility 0s 0.5s;
+}
+
+.buttonCell {
+  aspect-ratio: 1;
+  background-color: #3489ca;
+  border: none;
+  color: white;
+  cursor: pointer;
+  height: 2em;
+  padding: 0;
+  text-align: center;
+  width: 2em;
+}
