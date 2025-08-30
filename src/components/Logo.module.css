@@ -1,12 +1,12 @@
 @keyframes pulse {
   0% {
-    r: 4;
+    r: 4px;
   }
   50% {
-    r: 2;
+    r: 2px;
   }
   100% {
-    r: 4;
+    r: 4px;
   }
 }
 

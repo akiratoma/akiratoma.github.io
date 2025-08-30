@@ -44,8 +44,11 @@ function TablePage({ data }: { data: Gene[] }) {
                   <td>{gene.target.approvedName}</td>
                   <td>{gene.score.toFixed(3)}</td>
                 </tr>
-                <tr className={clsx(open[gene.target.id] ? styles.visible : styles.collapse)}>
-                  <td colSpan={4}>
+                <tr>
+                  <td
+                    className={clsx(open[gene.target.id] ? styles.rowOpened : styles.rowHidden)}
+                    colSpan={4}
+                  >
                     <div
                       className={clsx([
                         styles.row,
