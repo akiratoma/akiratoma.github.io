@@ -30,8 +30,10 @@ function TablePage({ data }: { data: Gene[] }) {
             {data.map((gene) => (
               <Fragment key={gene.target.id}>
                 <tr>
-                  <td className={styles.buttonCell} onClick={() => handleClick(gene.target.id)}>
-                    <div>{open[gene.target.id] ? "−" : "+"}</div>
+                  <td className={styles.buttonCell}>
+                    <div className={styles.button} onClick={() => handleClick(gene.target.id)}>
+                      {open[gene.target.id] ? "−" : "+"}
+                    </div>
                   </td>
                   <td>
                     <a
