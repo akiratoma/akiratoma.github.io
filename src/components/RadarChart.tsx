@@ -15,6 +15,7 @@ function RadarChart({ scores }: { scores: DataTypeScore[] }) {
   };
 
   const options = {
+    maintainAspectRatio: false,
     scales: {
       r: {
         grid: {
